@@ -4,8 +4,12 @@
 
 def min_value(digits):
     # choosing to use sort() inplace, it returns None instead of the sorted list assigned to a var
-    digits.sort()
+    set_digits = set(digits)
+    print(set_digits)
+    digit_list =list(set_digits)
+    digit_list.sort()
+    print(set_digits)
     #converting list to a string and returning int type
-    return int("".join([str(i) for i in set(digits)]))
+    return int("".join([str(i) for i in set_digits]))
 
-print(min_value([1, 9, 3, 1, 7, 4, 6, 6, 7]))
+print(min_value([4, 8, 1, 4]))
