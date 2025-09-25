@@ -10,6 +10,6 @@ def min_value(digits):
     digit_list.sort()
     print(set_digits)
     #converting list to a string and returning int type
-    return int("".join([str(i) for i in set_digits]))
+    return int("".join([str(i) for i in digit_list]))
 
 print(min_value([4, 8, 1, 4]))
