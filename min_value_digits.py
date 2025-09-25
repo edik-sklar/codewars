@@ -11,5 +11,9 @@ def min_value(digits):
     # converting a list to a string and returning an int type
     return int("".join([str(i) for i in digit_list]))
 
+    # much cleaner and more elegant solutions
+    # return int("".join(map(str,sorted(set(digits)))))
+    # return int("".join(str(x) for x in sorted(set(digits))))
+
 
 print(min_value([4, 8, 1, 4]))
